@@ -12,6 +12,7 @@ HDMI 多媒体展示 · 2.5D/3D 校园地图 · 板上动态寻路 · DS18B20 �
 [![FPGA](https://img.shields.io/badge/FPGA-HX4S20C-0b7285.svg)](#硬件与接线)
 [![Toolchain](https://img.shields.io/badge/Toolchain-TD%202026.1%20SP2-6f42c1.svg)](#从源码构建)
 [![HDL](https://img.shields.io/badge/HDL-Verilog%20%2F%20SystemVerilog-orange.svg)](#目录结构)
+[![演示视频](https://img.shields.io/badge/Bilibili-%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-fb7299)](https://www.bilibili.com/video/BV1vJ4g6WEps/)
 
 </div>
 
@@ -35,6 +36,12 @@ HDMI 多媒体展示 · 2.5D/3D 校园地图 · 板上动态寻路 · DS18B20 �
 - **PC 控制台**：通过 B 板板载 CH340 串口连接，负责人工事件、路障、温度解锁、中英文字幕发布、状态回读、日志导出和现场演示计时。
 
 > 竞赛成绩：嵌入式 FPGA 国三（国家级三等奖） · 安路赛题一。
+
+## 演示视频
+
+**▶ [FPGA国赛：多媒体展示与温度感知应急引导系统（Bilibili）](https://www.bilibili.com/video/BV1vJ4g6WEps/)**
+
+3 分钟现场实拍：HDMI 多媒体播放、2.5D 校园地图与动态寻路、封路重规划、DS18B20 温度联动、中英文串口字幕和 PC 控制台操作。
 
 ## 功能特性
 
