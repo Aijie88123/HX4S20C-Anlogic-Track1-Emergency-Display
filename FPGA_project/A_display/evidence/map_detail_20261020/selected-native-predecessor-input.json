@@ -1,0 +1,12 @@
+{
+  "status": "SOURCE_BOUND_SEARCH_PENDING",
+  "board": "A_display",
+  "runtime_seed": 32,
+  "prepared_utc": "2026-10-30T16:55:41.190688+00:00",
+  "gate_db_sha256": "CAC91BFCD33E472BA2213493D9077E6C779A890D05FEC7CE4E173A73588427FD",
+  "source_manifest_sha256": "0B53655F3E458DFD13931E12E6D8854E8173458097A337C44C2542B979C7165C",
+  "original_sdc_sha256": "552F8A56D193545D9B988E42B887F96350FC8DB6F6DAD13CDFF298D628FA00E6",
+  "executed_script_sha256": "165E9E7DA905E57AEB15E13C1D31EB415A9FE0ECA4B57DFA34EE2F4D2804700F",
+  "driver_sha256": "8F15A785740022D795DF1B27F4B5B1CB94FFC13E50F7C60C1DB3B22FCB9C1FB6",
+  "method": "Current-source standard synthesis and physical gate optimization. Native fresh placement/route/hold. Temporary stricter targets only; clear all user SDC and reload exact original before final reports and bitgen. No stage-marker creation."
+}

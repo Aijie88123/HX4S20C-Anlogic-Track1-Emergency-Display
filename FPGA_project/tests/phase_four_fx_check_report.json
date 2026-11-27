@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "Actual candidate and parent transition_fx RTL; 1280x720 pixels; all 8 mode codes",
+  "spreads": [
+    128,
+    0,
+    17,
+    127,
+    255
+  ],
+  "retained_mode_parent_equal_checks": 4608000,
+  "disabled_mode_zero_checks": 32256000,
+  "source_hashes": [
+    {
+      "path": "D:\\HX4S20C_flip_zoom_20261024\\A_display\\rtl\\transition_fx.v",
+      "sha256": "EC6EA1610D9299ADD888614B7AC11120770CB84DD069E9879A47A5B30079E66B"
+    },
+    {
+      "path": "D:\\HX4S20C_flip_zoom_20261024\\tests\\reference_four_fx\\transition_fx_parent.v",
+      "sha256": "1696C3409BE061039BB33BD3F81D99057E05F8343BDBBC5B48F442C844A786E2"
+    },
+    {
+      "path": "D:\\HX4S20C_flip_zoom_20261024\\tests\\phase_four_fx_check.v",
+      "sha256": "0289AEFB7848788E4BD7281B5970B69B5334F2420D9CF8FAE4E353F834EFC4A0"
+    },
+    {
+      "path": "D:\\HX4S20C_flip_zoom_20261024\\tests\\phase_four_fx_check.py",
+      "sha256": "ADB84EAEB8A3D84B0DC6CCE7CD1C91C8CB6C8E30043A4449CD9981D73039E82B"
+    }
+  ],
+  "stdout": "PHASE_NO_BLINDS_PASS checks=36864000 retained=4608000 disabled=32256000 width=1280 height=720 spreads=128,0,17,127,255\n"
+}

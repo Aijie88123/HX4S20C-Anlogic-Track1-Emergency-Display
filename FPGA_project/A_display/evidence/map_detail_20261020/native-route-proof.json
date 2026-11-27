@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "mode": "manual_native",
+  "runtime_output_selected": false,
+  "method": "Current-source TD2026.1SP2 standard synthesis and physical gate optimization verified. Selected same source-bound gate with fresh native seed35 placement/routing/hold repair; temporary stricter search targets cleared and exact candidate SDC reloaded before final positive setup/hold, four DRC and bitgen. Original standard-flow physical result is unselected; no fabricated markers or claim that the original physical flow completed successfully. Original unchanged project RAM initial-placement ADC explicitly loaded before placement. Additional 1695 soft initial cell locations from the parent particle-transition overlay layout, as soft starting locations only; temperature text sizing is rebuilt from current source were used only as placement hints. Current-source placement/routing/timing/DRC/bitgen were all rerun; no prior timing or firmware reused.",
+  "source_manifest_sha256": "85F4DE4146667E237F8300BD24CC1A7BA3F90E3B78C185A8FAE79E268197A4EA",
+  "build_manifest_sha256": "855F2A736F5231A44DED2C811F4A8D73FAF6096A598B6EC9DD75DAF7B61CAE8B",
+  "phy_log_sha256": "507E2A555AF335439EFA67BFA59BA447EEEABECFF8508D1774E954B34F961FAC"
+}

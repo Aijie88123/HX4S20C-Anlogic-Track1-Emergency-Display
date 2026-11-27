@@ -1,0 +1,42 @@
+{
+  "atlas": {
+    "header": [
+      0,
+      256,
+      192,
+      28
+    ],
+    "legend": [
+      8192,
+      128,
+      96,
+      40
+    ],
+    "person": [
+      13312,
+      64,
+      64,
+      12
+    ],
+    "hazard": [
+      14080,
+      64,
+      64,
+      12
+    ],
+    "route": [
+      14848,
+      64,
+      64,
+      12
+    ]
+  },
+  "colors": {
+    "0": "transparent",
+    "1": "half RGB565 dark glass",
+    "2": "region accent",
+    "3": "white"
+  },
+  "status_variants": 16,
+  "compass_variants": 8
+}

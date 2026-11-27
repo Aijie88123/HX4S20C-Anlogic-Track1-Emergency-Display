@@ -1,0 +1,83 @@
+// Full-rate, shared quadrature DFT. All twelve bins see every PCM sample.
+// 2048 samples / 48kHz = 42.667ms. 64-segment Hamming window; 40-bit sums.
+// Phase and sums use block RAM. Quarter-wave sine ROM is 12-bit/1024 phase.
+// Result is monotonic 12-bit log2(power): six exponent + six fraction bits.
+module audio_dft12(
+ input clk,rst,input signed [23:0] I_audio,input I_audio_valid,
+ output busy,output reg O_band_valid,output reg [4:0] O_band,output reg [15:0] O_mag);
+ (* ram_style="bram_32k" *) reg [111:0] states[0:11]; /* fehdl force_ram=1, ram_style="bram_32k" */
+ (* ram_style="bram" *) reg [11:0] sine_mem[0:256];
+ initial begin
+@SINE@
+ end
+ function [31:0] increment;input [3:0] n;
+ begin case(n)
+@INCREMENTS@
+    default:increment=0;
+ endcase end endfunction
+ function [7:0] window_coefficient;input [5:0] n;
+ begin case(n)
+@WINDOW@
+    default:window_coefficient=0;
+ endcase end endfunction
+ function [8:0] quarter_address;input [31:0] p;
+ begin quarter_address=p[30]?(9'd256-{1'b0,p[29:22]}):{1'b0,p[29:22]};end endfunction
+ function [11:0] logarithm;input [36:0] p;integer k;reg [5:0] exponent;reg [36:0] shifted;
+ begin
+  exponent=0;for(k=0;k<37;k=k+1)if(p[k])exponent=k;
+  shifted=exponent>=6?p>>(exponent-6):p<<(6-exponent);
+  logarithm=p==0?12'd0:{exponent,shifted[5:0]};
+ end endfunction
+ reg [3:0] state,bin;reg [10:0] sample_index;
+ reg [111:0] state_q;reg [8:0] sine_address;reg [11:0] sine_q;reg sine_negative;
+ reg [31:0] phase;reg signed [39:0] sum_i,sum_q;
+ reg signed [24:0] window_product;reg signed [15:0] windowed;
+ reg signed [28:0] product;reg signed [35:0] square_i,square_q;reg [36:0] power;
+ wire signed [12:0] coefficient=sine_negative?-$signed({1'b0,sine_q}):$signed({1'b0,sine_q});
+ wire signed [39:0] extended_product={{11{product[28]}},product};
+ wire signed [17:0] scaled_i=sum_i>>>20,scaled_q=sum_q>>>20;
+ wire [31:0] cos_phase=phase+32'h40000000;
+ assign busy=state!=0;
+ always @(posedge clk)begin state_q<=states[bin];sine_q<=sine_mem[sine_address];end
+ always @(posedge clk)if(state==11)states[bin]<={phase+increment(bin),sum_i,sum_q};
+ always @(posedge clk)begin
+  if(rst)begin
+   state<=0;bin<=0;sample_index<=0;O_band_valid<=0;O_band<=0;O_mag<=0;
+   sine_address<=0;sine_negative<=0;phase<=0;sum_i<=0;sum_q<=0;
+   window_product<=0;windowed<=0;product<=0;square_i<=0;square_q<=0;power<=0;
+  end else begin
+   O_band_valid<=0;
+   case(state)
+    0:if(I_audio_valid)begin
+     window_product<=$signed(I_audio[23:8])*$signed({1'b0,window_coefficient(sample_index[10:5])});
+     bin<=0;state<=1;
+    end
+    1:begin windowed<=window_product>>>8;state<=2;end
+    2:state<=3;
+    3:begin
+     phase<=sample_index==0?0:state_q[111:80];
+     sum_i<=sample_index==0?40'sd0:$signed(state_q[79:40]);
+     sum_q<=sample_index==0?40'sd0:$signed(state_q[39:0]);state<=4;
+    end
+    4:begin sine_address<=quarter_address(phase);sine_negative<=phase[31];state<=5;end
+    5:state<=6;
+    6:begin product<=windowed*coefficient;state<=7;end
+    7:begin sum_i<=sum_i+extended_product;sine_address<=quarter_address(cos_phase);sine_negative<=cos_phase[31];state<=8;end
+    8:state<=9;
+    9:begin product<=windowed*coefficient;state<=10;end
+    10:begin sum_q<=sum_q+extended_product;state<=11;end
+    11:begin
+     if(sample_index==2047)begin square_i<=scaled_i*scaled_i;square_q<=scaled_q*scaled_q;state<=12;end
+     else if(bin==11)begin sample_index<=sample_index+1'b1;state<=0;end
+     else begin bin<=bin+1'b1;state<=2;end
+    end
+    12:begin power<={1'b0,square_i}+{1'b0,square_q};state<=13;end
+    13:begin
+     O_band_valid<=1;O_band<={1'b0,bin};O_mag<={4'd0,logarithm(power)};
+     if(bin==11)begin sample_index<=0;state<=0;end else begin bin<=bin+1'b1;state<=2;end
+    end
+    default:state<=0;
+   endcase
+  end
+ end
+endmodule

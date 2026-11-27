@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "folder": "E:/PREV_BMP",
+  "files": [
+    {
+      "file": "05.BMP",
+      "dimensions": [
+        640,
+        480
+      ],
+      "contiguous": true,
+      "lba": 37664,
+      "sha256": "42535dc7ff0922c57e4016162750a6701d72a1dd702c0fcfecb5045dc774dd1f",
+      "full_raw_file_hash_matches": true
+    },
+    {
+      "file": "06.BMP",
+      "dimensions": [
+        800,
+        600
+      ],
+      "contiguous": true,
+      "lba": 34848,
+      "sha256": "018302a0b2b2492f00e6874b089bedd1fc8efc892d67ca89b4f0486f6b9cfeb7",
+      "full_raw_file_hash_matches": true
+    },
+    {
+      "file": "01.BMP",
+      "dimensions": [
+        640,
+        480
+      ],
+      "contiguous": true,
+      "lba": 41280,
+      "sha256": "039155a24d9bf54e2232af88d194c0a1974b2db7c3e349264d56ee15bafc430a",
+      "full_raw_file_hash_matches": true
+    },
+    {
+      "file": "02.BMP",
+      "dimensions": [
+        640,
+        480
+      ],
+      "contiguous": true,
+      "lba": 43088,
+      "sha256": "d2a50603d615a21e2f82e4cc5e116b52d2748a18e6c5c07984585112b9d1cd39",
+      "full_raw_file_hash_matches": true
+    },
+    {
+      "file": "03.BMP",
+      "dimensions": [
+        640,
+        480
+      ],
+      "contiguous": true,
+      "lba": 39472,
+      "sha256": "fdf5515004c49c8646a8d3c003f67f2ae289a799d0070c61b713650dce99a1fd",
+      "full_raw_file_hash_matches": true
+    },
+    {
+      "file": "02INFO.BMP",
+      "dimensions": [
+        427,
+        321
+      ],
+      "contiguous": true,
+      "lba": 48520,
+      "sha256": "78cab050a420aa91d253271e23c87ce1d6448f85a5eafc5e1ddfb58f5c8edc10",
+      "full_raw_file_hash_matches": true
+    },
+    {
+      "file": "03INFO.BMP",
+      "dimensions": [
+        800,
+        600
+      ],
+      "contiguous": true,
+      "lba": 49328,
+      "sha256": "e34e337afc8efc91f7e77405dfa038e6173defc5d0cd87337c0372a05a41adcc",
+      "full_raw_file_hash_matches": true
+    },
+    {
+      "file": "04INFO.BMP",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "contiguous": true,
+      "lba": 52144,
+      "sha256": "b88ba599c9f18438c0b97b86a0ddeea475b8a93b2413332f24a5859ad85bcc38",
+      "full_raw_file_hash_matches": true
+    }
+  ],
+  "excluded": [
+    "04.BMP",
+    "root directory BMPs"
+  ],
+  "read_only": true
+}

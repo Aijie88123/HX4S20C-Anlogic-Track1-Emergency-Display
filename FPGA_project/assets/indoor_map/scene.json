@@ -1,0 +1,753 @@
+{
+  "width": 640,
+  "height": 480,
+  "tile": 4,
+  "unique_tiles": 1599,
+  "index_bits": 11,
+  "index_entries": 20480,
+  "index_storage_bits": 360448,
+  "atlas_storage_bits": 131072,
+  "palette": [
+    4386,
+    1122867,
+    2241348,
+    1122867,
+    3364198,
+    6719641,
+    10075084,
+    13426158,
+    15663103,
+    3359829,
+    4487048,
+    2241331,
+    3359812,
+    4487031,
+    8956603,
+    5601160
+  ],
+  "graph": "Unchanged13nodes16edges; world coordinates80/256/432, terminal512/0; rooms placed strictly outside corridor centreline",
+  "projection": "x=320+(u-v)/2,y=94+(u+v)/4-z",
+  "rooms": [
+    [
+      3,
+      3,
+      51,
+      51
+    ],
+    [
+      109,
+      3,
+      227,
+      51
+    ],
+    [
+      285,
+      3,
+      403,
+      51
+    ],
+    [
+      461,
+      3,
+      509,
+      51
+    ],
+    [
+      3,
+      109,
+      51,
+      227
+    ],
+    [
+      109,
+      109,
+      227,
+      227
+    ],
+    [
+      285,
+      109,
+      403,
+      227
+    ],
+    [
+      461,
+      109,
+      509,
+      227
+    ],
+    [
+      3,
+      285,
+      51,
+      403
+    ],
+    [
+      109,
+      285,
+      227,
+      403
+    ],
+    [
+      285,
+      285,
+      403,
+      403
+    ],
+    [
+      461,
+      285,
+      509,
+      403
+    ],
+    [
+      3,
+      461,
+      51,
+      509
+    ],
+    [
+      109,
+      461,
+      227,
+      509
+    ],
+    [
+      285,
+      461,
+      403,
+      509
+    ],
+    [
+      461,
+      461,
+      509,
+      509
+    ]
+  ],
+  "functions": [
+    {
+      "id": "B01",
+      "kind": "\u4e3b\u697c",
+      "bounds": [
+        3,
+        3,
+        51,
+        51
+      ],
+      "short_name": "\u4e3b\u697cA",
+      "name": "\u4e3b\u697cA\u5ea7"
+    },
+    {
+      "id": "B02",
+      "kind": "\u6559\u5b66\u697c",
+      "bounds": [
+        109,
+        3,
+        227,
+        51
+      ],
+      "short_name": "\u6559\u5b66A",
+      "name": "\u6559\u5b66A\u697c"
+    },
+    {
+      "id": "B05",
+      "kind": "\u4e3b\u697c",
+      "bounds": [
+        3,
+        109,
+        51,
+        227
+      ],
+      "short_name": "\u4e3b\u697cB",
+      "name": "\u4e3b\u697cB\u5ea7"
+    },
+    {
+      "id": "B03",
+      "kind": "\u5b9e\u9a8c\u697c",
+      "bounds": [
+        285,
+        3,
+        403,
+        51
+      ],
+      "short_name": "\u5b9e\u9a8cA",
+      "name": "\u5b9e\u9a8cA\u697c"
+    },
+    {
+      "id": "B06",
+      "kind": "\u6559\u5b66\u697c",
+      "bounds": [
+        109,
+        109,
+        227,
+        227
+      ],
+      "short_name": "\u6559\u5b66B",
+      "name": "\u6559\u5b66B\u697c"
+    },
+    {
+      "id": "B09",
+      "kind": "\u4e3b\u697c",
+      "bounds": [
+        3,
+        285,
+        51,
+        403
+      ],
+      "short_name": "\u4e3b\u697cC",
+      "name": "\u4e3b\u697cC\u5ea7"
+    },
+    {
+      "id": "B04",
+      "kind": "\u751f\u6d3b\u697c",
+      "bounds": [
+        461,
+        3,
+        509,
+        51
+      ],
+      "short_name": "\u751f\u6d3bA",
+      "name": "\u751f\u6d3bA\u697c"
+    },
+    {
+      "id": "B13",
+      "kind": "\u4e3b\u697c",
+      "bounds": [
+        3,
+        461,
+        51,
+        509
+      ],
+      "short_name": "\u4e3b\u697cD",
+      "name": "\u4e3b\u697cD\u5ea7"
+    },
+    {
+      "id": "B07",
+      "kind": "\u5b9e\u9a8c\u697c",
+      "bounds": [
+        285,
+        109,
+        403,
+        227
+      ],
+      "short_name": "\u5b9e\u9a8cB",
+      "name": "\u5b9e\u9a8cB\u697c"
+    },
+    {
+      "id": "B10",
+      "kind": "\u6559\u5b66\u697c",
+      "bounds": [
+        109,
+        285,
+        227,
+        403
+      ],
+      "short_name": "\u6559\u5b66C",
+      "name": "\u6559\u5b66C\u697c"
+    },
+    {
+      "id": "B08",
+      "kind": "\u751f\u6d3b\u697c",
+      "bounds": [
+        461,
+        109,
+        509,
+        227
+      ],
+      "short_name": "\u751f\u6d3bB",
+      "name": "\u751f\u6d3bB\u697c"
+    },
+    {
+      "id": "B14",
+      "kind": "\u6559\u5b66\u697c",
+      "bounds": [
+        109,
+        461,
+        227,
+        509
+      ],
+      "short_name": "\u6559\u5b66D",
+      "name": "\u6559\u5b66D\u697c"
+    },
+    {
+      "id": "B11",
+      "kind": "\u5b9e\u9a8c\u697c",
+      "bounds": [
+        285,
+        285,
+        403,
+        403
+      ],
+      "short_name": "\u5b9e\u9a8cC",
+      "name": "\u5b9e\u9a8cC\u697c"
+    },
+    {
+      "id": "B12",
+      "kind": "\u751f\u6d3b\u697c",
+      "bounds": [
+        461,
+        285,
+        509,
+        403
+      ],
+      "short_name": "\u751f\u6d3bC",
+      "name": "\u751f\u6d3bC\u697c"
+    },
+    {
+      "id": "B15",
+      "kind": "\u5b9e\u9a8c\u697c",
+      "bounds": [
+        285,
+        461,
+        403,
+        509
+      ],
+      "short_name": "\u5b9e\u9a8cD",
+      "name": "\u5b9e\u9a8cD\u697c"
+    },
+    {
+      "id": "B16",
+      "kind": "\u751f\u6d3b\u697c",
+      "bounds": [
+        461,
+        461,
+        509,
+        509
+      ],
+      "short_name": "\u751f\u6d3bD",
+      "name": "\u751f\u6d3bD\u697c"
+    }
+  ],
+  "visual_geometry": {
+    "B01": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        15,
+        15,
+        39,
+        39
+      ]
+    },
+    "B02": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        121,
+        15,
+        215,
+        39
+      ]
+    },
+    "B05": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        15,
+        121,
+        39,
+        215
+      ]
+    },
+    "B03": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        297,
+        15,
+        391,
+        39
+      ]
+    },
+    "B06": {
+      "upper_height": 16,
+      "maximum_height": 20,
+      "upper_bounds": [
+        127,
+        127,
+        209,
+        209
+      ]
+    },
+    "B09": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        15,
+        297,
+        39,
+        391
+      ]
+    },
+    "B04": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        473,
+        15,
+        497,
+        39
+      ]
+    },
+    "B13": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        15,
+        473,
+        39,
+        497
+      ]
+    },
+    "B07": {
+      "upper_height": 16,
+      "maximum_height": 20,
+      "upper_bounds": [
+        303,
+        127,
+        385,
+        209
+      ]
+    },
+    "B10": {
+      "upper_height": 16,
+      "maximum_height": 20,
+      "upper_bounds": [
+        127,
+        303,
+        209,
+        385
+      ]
+    },
+    "B08": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        473,
+        121,
+        497,
+        215
+      ]
+    },
+    "B14": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        121,
+        473,
+        215,
+        497
+      ]
+    },
+    "B11": {
+      "upper_height": 16,
+      "maximum_height": 20,
+      "upper_bounds": [
+        303,
+        303,
+        385,
+        385
+      ]
+    },
+    "B12": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        473,
+        297,
+        497,
+        391
+      ]
+    },
+    "B15": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        297,
+        473,
+        391,
+        497
+      ]
+    },
+    "B16": {
+      "upper_height": 14,
+      "maximum_height": 18,
+      "upper_bounds": [
+        473,
+        473,
+        497,
+        497
+      ]
+    }
+  },
+  "nameplates": [
+    {
+      "id": "B01",
+      "short_name": "\u4e3b\u697cA",
+      "name": "\u4e3b\u697cA\u5ea7",
+      "anchor": [
+        320.0,
+        92.5
+      ],
+      "box": [
+        298,
+        83,
+        341,
+        101
+      ]
+    },
+    {
+      "id": "B02",
+      "short_name": "\u6559\u5b66A",
+      "name": "\u6559\u5b66A\u697c",
+      "anchor": [
+        390.5,
+        127.75
+      ],
+      "box": [
+        368,
+        118,
+        411,
+        136
+      ]
+    },
+    {
+      "id": "B05",
+      "short_name": "\u4e3b\u697cB",
+      "name": "\u4e3b\u697cB\u5ea7",
+      "anchor": [
+        249.5,
+        127.75
+      ],
+      "box": [
+        228,
+        118,
+        270,
+        136
+      ]
+    },
+    {
+      "id": "B03",
+      "short_name": "\u5b9e\u9a8cA",
+      "name": "\u5b9e\u9a8cA\u697c",
+      "anchor": [
+        478.5,
+        171.75
+      ],
+      "box": [
+        456,
+        168,
+        499,
+        186
+      ]
+    },
+    {
+      "id": "B06",
+      "short_name": "\u6559\u5b66B",
+      "name": "\u6559\u5b66B\u697c",
+      "anchor": [
+        320.0,
+        161.0
+      ],
+      "box": [
+        298,
+        152,
+        340,
+        170
+      ]
+    },
+    {
+      "id": "B09",
+      "short_name": "\u4e3b\u697cC",
+      "name": "\u4e3b\u697cC\u5ea7",
+      "anchor": [
+        161.5,
+        171.75
+      ],
+      "box": [
+        140,
+        168,
+        182,
+        186
+      ]
+    },
+    {
+      "id": "B04",
+      "short_name": "\u751f\u6d3bA",
+      "name": "\u751f\u6d3bA\u697c",
+      "anchor": [
+        549.0,
+        207.0
+      ],
+      "box": [
+        535,
+        210,
+        578,
+        228
+      ]
+    },
+    {
+      "id": "B13",
+      "short_name": "\u4e3b\u697cD",
+      "name": "\u4e3b\u697cD\u5ea7",
+      "anchor": [
+        91.0,
+        207.0
+      ],
+      "box": [
+        61,
+        210,
+        104,
+        228
+      ]
+    },
+    {
+      "id": "B07",
+      "short_name": "\u5b9e\u9a8cB",
+      "name": "\u5b9e\u9a8cB\u697c",
+      "anchor": [
+        408.0,
+        205.0
+      ],
+      "box": [
+        386,
+        196,
+        428,
+        214
+      ]
+    },
+    {
+      "id": "B10",
+      "short_name": "\u6559\u5b66C",
+      "name": "\u6559\u5b66C\u697c",
+      "anchor": [
+        232.0,
+        205.0
+      ],
+      "box": [
+        210,
+        216,
+        252,
+        234
+      ]
+    },
+    {
+      "id": "B08",
+      "short_name": "\u751f\u6d3bB",
+      "name": "\u751f\u6d3bB\u697c",
+      "anchor": [
+        478.5,
+        242.25
+      ],
+      "box": [
+        465,
+        245,
+        507,
+        263
+      ]
+    },
+    {
+      "id": "B14",
+      "short_name": "\u6559\u5b66D",
+      "name": "\u6559\u5b66D\u697c",
+      "anchor": [
+        161.5,
+        242.25
+      ],
+      "box": [
+        132,
+        245,
+        175,
+        263
+      ]
+    },
+    {
+      "id": "B11",
+      "short_name": "\u5b9e\u9a8cC",
+      "name": "\u5b9e\u9a8cC\u697c",
+      "anchor": [
+        320.0,
+        249.0
+      ],
+      "box": [
+        298,
+        240,
+        340,
+        258
+      ]
+    },
+    {
+      "id": "B12",
+      "short_name": "\u751f\u6d3bC",
+      "name": "\u751f\u6d3bC\u697c",
+      "anchor": [
+        390.5,
+        286.25
+      ],
+      "box": [
+        377,
+        289,
+        419,
+        307
+      ]
+    },
+    {
+      "id": "B15",
+      "short_name": "\u5b9e\u9a8cD",
+      "name": "\u5b9e\u9a8cD\u697c",
+      "anchor": [
+        249.5,
+        286.25
+      ],
+      "box": [
+        220,
+        289,
+        263,
+        307
+      ]
+    },
+    {
+      "id": "B16",
+      "short_name": "\u751f\u6d3bD",
+      "name": "\u751f\u6d3bD\u697c",
+      "anchor": [
+        320.0,
+        321.5
+      ],
+      "box": [
+        298,
+        330,
+        341,
+        348
+      ]
+    }
+  ],
+  "static_rgb444": true,
+  "hud_entries": [
+    "\u706b\u707e",
+    "\u5730\u9707",
+    "\u5b9e\u9a8c\u5ba4\u4e8b\u6545",
+    "\u6f14\u7ec3",
+    "\u51fa\u53e3 01",
+    "\u51fa\u53e3 02",
+    "\u51fa\u53e3 03",
+    "\u51fa\u53e3 04",
+    "\u65e0\u53ef\u7528\u8def\u7ebf",
+    "\u6559\u5b66C B10",
+    "\u6559\u5b66B B06",
+    "\u5b9e\u9a8cB B07",
+    "\u5b9e\u9a8cC B11",
+    "\u5f00\u653e 0/4",
+    "\u5f00\u653e 1/4",
+    "\u5f00\u653e 2/4",
+    "\u5f00\u653e 3/4",
+    "\u5f00\u653e 4/4",
+    "\u706b\u707e\u6f14\u7ec3",
+    "\u5730\u9707\u6f14\u7ec3",
+    "\u5b9e\u9a8c\u5ba4\u6f14\u7ec3",
+    "\u5e94\u6025\u6f14\u7ec3"
+  ],
+  "hud_bits": 65536,
+  "native_map_roms": 14
+}

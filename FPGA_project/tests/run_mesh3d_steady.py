@@ -1,0 +1,32 @@
+from pathlib import Path
+import subprocess,hashlib,json
+r=Path(__file__).resolve().parents[1];m=Path('D:/modelsim/win64');o=r/'evidence/3d_ui_smooth_20261018/steady_chain';o.mkdir(parents=True,exist_ok=True);w=o/'work';b=r/'B_control';a=r/'A_display';sd=b/'vendor/user_source/hdl_source/SD';ip=b/'vendor/user_source/hdl_source/IP'
+f=[sd/n for n in ['bmp_read.v','sd_card_top.v','sd_card_cmd.v','sd_card_sec_read_write.v','frame_fifo_read.v','frame_fifo_write.v','frame_read_write.v']]+[b/'rtl'/n for n in ['b_mesh3d_tile_renderer.v','b_mesh3d_frame_renderer.v','b_particle_shader.v','b_media_storage.v','b_map_frame_renderer.v','emergency_map_top.v','bmp_write_scaler.v','memory_startup_reset.v']]
+f += [r/'common'/n for n in ['mesh3d_divider.v','ethernet_mailbox.v','distributed_map.v','distributed_media.v','raster_map_transport.v','raster_map_window.v']]+[a/'rtl'/n for n in ['map_received_scanout.v','video_scanout_720p.v']]+[ip/n for n in ['afifo_16_32_256.v','afifo_32_16_256.v']]
+f += [r/'tests'/n for n in ['card_spi_prev_playlist.v','tf_memory_models.v','map_shader_reference.v','tb_mesh3d_steady.v']]+[Path('D:/td_extract/5E781D7/sim_release/eg4/eg_logic_bram.v')]
+f += [r/'tests/mesh3d_steady_packets.hex',r/'tests/mesh3d_steady_words.hex']
+# Use six exact frames from the continuous projector/renderer regression.
+t=r/'tests'
+if (t/'mesh3d_live_packets.hex').exists() and (t/'mesh3d_live_words.hex').exists():
+ (t/'mesh3d_steady_packets.hex').write_text('\n'.join((t/'mesh3d_live_packets.hex').read_text().splitlines()[:708])+'\n')
+ (t/'mesh3d_steady_words.hex').write_text('\n'.join((t/'mesh3d_live_words.hex').read_text().splitlines()[:691200])+'\n')
+else:
+ # The compact release includes these exact six-frame fixtures. Reuse them
+ # without requiring the discarded sixty-frame preview outputs.
+ assert (t/'mesh3d_steady_packets.hex').exists() and (t/'mesh3d_steady_words.hex').exists(), 'Run run_mesh3d_live.py to generate the missing reference fixtures'
+sources=f+[Path(__file__).resolve()]
+h={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources};logs=[]
+ini=o/'modelsim.ini';ini.write_text('[Library]\nothers = D:/modelsim/modelsim.ini\n')
+def run(tool,args):
+ if tool in ['vmap','vlog','vsim']:args=['-modelsimini',ini.as_posix(),*args]
+ p=subprocess.run([str(m/(tool+'.exe')),*args],cwd=r/'tests',capture_output=True,timeout=1200);s=(p.stdout+p.stderr).decode(errors='replace');logs.append(s)
+ if p.returncode or '** Error' in s or '** Fatal' in s:raise RuntimeError(s[-5000:])
+ return s
+try:
+ if not w.exists():run('vlib',[str(w)])
+ run('vmap',['steady_chain_work',str(w)]);run('vlog',['-sv','-work',str(w),*map(str,[p for p in f if p.suffix!='.hex'])])
+ for no_card in [1]:
+  s=run('vsim',['-c','steady_chain_work.tb_mesh3d_steady','-gNO_CARD='+str(no_card),'-do','onerror {quit -code 1}; run -all; quit -code 0']);assert 'PASS:' in s
+  print('\n'.join(x for x in s.splitlines() if 'PASS:' in x or 'MEASURE:' in x),flush=True)
+finally:(o/'audit.log').write_text('\n'.join(logs))
+assert h=={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources};(o/'result.json').write_text(json.dumps({'status':'PASS','source_hashes':h,'observations':[l for l in s.splitlines() if 'MEASURE:' in l or 'PASS:' in l]},indent=2))

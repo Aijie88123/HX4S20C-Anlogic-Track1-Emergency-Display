@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "board": "B_control",
+  "runtime_seed": 36,
+  "prepared_utc": "2026-10-31T05:12:39.009217+00:00",
+  "gate_db_sha256": "B7255387B233267E1E04BA41F14DF56C12DD076F2694DDA5AB103879EDA718BB",
+  "source_manifest_sha256": "F6E3E7F7C639645B1575480B15034481C9A3577734A8F551FDBF603C8262ED76",
+  "original_sdc_sha256": "6245B9841B1FE59D9EA2D6C474DF677285D690EA4AB467B01D1E67BACB492FB6",
+  "executed_script_sha256": "E53CB091F2E44C526ADE5F8A8F86AF37C36FF7CDEC43CD38A5455BD4C7CD8991",
+  "driver_sha256": "94F15BDE0E8A5D7F6FB14F80F6FD69AD3FB07D6FC77118ABF0B192CF665C09A2",
+  "method": "Current-source standard synthesis and physical gate optimization. Native fresh placement/route/hold. Temporary stricter targets only; clear all user SDC and reload exact original before final reports and bitgen. No stage-marker creation.",
+  "selected": true,
+  "final_original_constraint_timing": "SWNS: 0.234ns, STNS: 0.000ns.\nHWNS: 0.024ns, HTNS: 0.000ns.\n"
+}

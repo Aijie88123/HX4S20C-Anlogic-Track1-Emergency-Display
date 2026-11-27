@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "runtime_seed": 36,
+  "gate_db_sha256": "B7255387B233267E1E04BA41F14DF56C12DD076F2694DDA5AB103879EDA718BB",
+  "executed_script_sha256": "E53CB091F2E44C526ADE5F8A8F86AF37C36FF7CDEC43CD38A5455BD4C7CD8991",
+  "original_sdc_sha256": "6245B9841B1FE59D9EA2D6C474DF677285D690EA4AB467B01D1E67BACB492FB6",
+  "timing": "SWNS: 0.234ns, STNS: 0.000ns.\nHWNS: 0.024ns, HTNS: 0.000ns.\n",
+  "method": "Current-source TD2026.1SP2 standard synthesis and physical gate optimization verified. Selected same source-bound gate with fresh native seed36 placement/routing/hold repair; temporary stricter search targets cleared and exact candidate SDC reloaded before final positive setup/hold, four DRC and bitgen. Standard synthesis/gate were requested before this fresh native physical run; no claim of a completed standard All physical flow or manufactured stage flags."
+}

@@ -1,0 +1,14 @@
+{
+  "sectors": 14,
+  "expected_count": 7,
+  "slot_order": [
+    "05.BMP",
+    "06.BMP",
+    "01.BMP",
+    "02.BMP",
+    "03.BMP",
+    "02INFO.BMP",
+    "03INFO.BMP",
+    "04INFO.BMP"
+  ]
+}

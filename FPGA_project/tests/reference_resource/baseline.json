@@ -1,0 +1,8 @@
+{
+  "baseline": "D:/HX4S20C_native_smooth_20261020",
+  "sources": {
+    "common/ethernet_frame_tx.v": "6928878dd13c7676f094a1046ed832fca9797a075dea82d8b4c78425c9450d3b",
+    "common/ethernet_frame_rx.v": "6edf77cf347ee85733a0e316476c7bb22d73d7074fa2080989a025927849fb06",
+    "B_control/rtl/emergency_map_top.v": "c34f42e588a6f226e3b7cf10ac01e5e3966194d1099f895c21930dcd422419f0"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "01.BMP",
+    "sha256": "039155a24d9bf54e2232af88d194c0a1974b2db7c3e349264d56ee15bafc430a",
+    "bytes": 921654,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "name": "02.BMP",
+    "sha256": "d2a50603d615a21e2f82e4cc5e116b52d2748a18e6c5c07984585112b9d1cd39",
+    "bytes": 921654,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "name": "03.BMP",
+    "sha256": "fdf5515004c49c8646a8d3c003f67f2ae289a799d0070c61b713650dce99a1fd",
+    "bytes": 921654,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "name": "02INFO.BMP",
+    "sha256": "c20f02bbfc3a00b13641d8fdaac67b9c667012584979eb28eb980cb2a39f4ce0",
+    "bytes": 921654,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "name": "03INFO.BMP",
+    "sha256": "e34e337afc8efc91f7e77405dfa038e6173defc5d0cd87337c0372a05a41adcc",
+    "bytes": 1440054,
+    "width": 800,
+    "height": 600
+  },
+  {
+    "name": "04INFO.BMP",
+    "sha256": "b88ba599c9f18438c0b97b86a0ddeea475b8a93b2413332f24a5859ad85bcc38",
+    "bytes": 2764854,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "name": "05.BMP",
+    "sha256": "42535dc7ff0922c57e4016162750a6701d72a1dd702c0fcfecb5045dc774dd1f",
+    "bytes": 921654,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "name": "06.BMP",
+    "sha256": "018302a0b2b2492f00e6874b089bedd1fc8efc892d67ca89b4f0486f6b9cfeb7",
+    "bytes": 1440054,
+    "width": 800,
+    "height": 600
+  }
+]

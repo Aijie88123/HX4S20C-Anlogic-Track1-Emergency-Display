@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "Actual candidate and parent transition_fx RTL; 1280x720 pixels; all 8 mode codes",
+  "spreads": [
+    128,
+    0,
+    17,
+    127,
+    255
+  ],
+  "retained_mode_parent_equal_checks": 13824000,
+  "disabled_mode_zero_checks": 23040000,
+  "source_hashes": [
+    {
+      "path": "D:\\HX4S20C_transition_trim_20261023\\A_display\\rtl\\transition_fx.v",
+      "sha256": "1696C3409BE061039BB33BD3F81D99057E05F8343BDBBC5B48F442C844A786E2"
+    },
+    {
+      "path": "D:\\HX4S20C_transition_trim_20261023\\tests\\reference_trim\\transition_fx_parent.v",
+      "sha256": "5EC24E07CCF1625F56C683C740E900A7974962BE29E9E220075793BAEB5B30BE"
+    },
+    {
+      "path": "D:\\HX4S20C_transition_trim_20261023\\tests\\phase_trim_check.v",
+      "sha256": "2BC0E3F51046668D3B019F95108D45216FDEF1D1D0AEE00FE832C2968E23FD92"
+    },
+    {
+      "path": "D:\\HX4S20C_transition_trim_20261023\\tests\\phase_trim_check.py",
+      "sha256": "C81DAB60E9B1D87E4C86837D01A25873B7AA2C5A25A52348F1978128E72DD3B7"
+    }
+  ],
+  "stdout": "PHASE_TRIM_PASS checks=36864000 retained=13824000 disabled=23040000 width=1280 height=720 spreads=128,0,17,127,255\n"
+}

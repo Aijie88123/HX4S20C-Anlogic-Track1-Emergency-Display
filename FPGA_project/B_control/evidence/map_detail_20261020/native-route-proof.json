@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "mode": "manual_native",
+  "runtime_output_selected": false,
+  "method": "Current-source TD2026.1SP2 standard synthesis and physical gate optimization verified. Selected same source-bound gate with fresh native seed36 placement/routing/hold repair; temporary stricter search targets cleared and exact candidate SDC reloaded before final positive setup/hold, four DRC and bitgen. Standard synthesis/gate were requested before this fresh native physical run; no claim of a completed standard All physical flow or manufactured stage flags.",
+  "source_manifest_sha256": "F6E3E7F7C639645B1575480B15034481C9A3577734A8F551FDBF603C8262ED76",
+  "build_manifest_sha256": "92D9C66497A54B08D26BB47504FBA9CEDD0FE6F61B2354A8688D0B4A5F77889B",
+  "phy_log_sha256": "4889126C0EC3B647F9470B22EAC589F41E9E6934C7496AB0B0F5979DDAB1C724"
+}

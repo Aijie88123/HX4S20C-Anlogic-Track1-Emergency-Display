@@ -1,0 +1,11 @@
+{
+  "source": "assets/tf_card/PREV_BMP/02INFO.BMP",
+  "sha256": "c20f02bbfc3a00b13641d8fdaac67b9c667012584979eb28eb980cb2a39f4ce0",
+  "dimensions": [
+    640,
+    480
+  ],
+  "bytes": 921654,
+  "fragmented_file_clusters": 1801,
+  "fixture": "Synthetic FAT32 MBR/BPB/directory with exact current BMP bytes, not captured physical TF"
+}

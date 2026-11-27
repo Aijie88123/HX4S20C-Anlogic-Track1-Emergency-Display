@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "runtime_seed": 35,
+  "gate_db_sha256": "F50CC5A4DE3E0F1A9C29B5A076CFD6A2FDBD7DA38E582FEB71B3D57D83D4F4F6",
+  "executed_script_sha256": "D65D0966510DB8AE45C8B69C1C065BA1C71ADFB4AE8E08599EEF9F825BB049DD",
+  "original_sdc_sha256": "552F8A56D193545D9B988E42B887F96350FC8DB6F6DAD13CDFF298D628FA00E6",
+  "timing": "SWNS: 0.546ns, STNS: 0.000ns.\nHWNS: 0.027ns, HTNS: 0.000ns.\n",
+  "method": "Current-source TD2026.1SP2 standard synthesis and physical gate optimization verified. Selected same source-bound gate with fresh native seed35 placement/routing/hold repair; temporary stricter search targets cleared and exact candidate SDC reloaded before final positive setup/hold, four DRC and bitgen. Original standard-flow physical result is unselected; no fabricated markers or claim that the original physical flow completed successfully. Original unchanged project RAM initial-placement ADC explicitly loaded before placement. Additional 1695 soft initial cell locations from the parent particle-transition overlay layout, as soft starting locations only; temperature text sizing is rebuilt from current source were used only as placement hints. Current-source placement/routing/timing/DRC/bitgen were all rerun; no prior timing or firmware reused."
+}

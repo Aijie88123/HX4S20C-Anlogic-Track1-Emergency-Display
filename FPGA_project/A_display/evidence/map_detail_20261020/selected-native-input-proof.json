@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "board": "A_display",
+  "runtime_seed": 35,
+  "prepared_utc": "2026-10-31T03:54:30.578448+00:00",
+  "gate_db_sha256": "F50CC5A4DE3E0F1A9C29B5A076CFD6A2FDBD7DA38E582FEB71B3D57D83D4F4F6",
+  "source_manifest_sha256": "85F4DE4146667E237F8300BD24CC1A7BA3F90E3B78C185A8FAE79E268197A4EA",
+  "original_sdc_sha256": "552F8A56D193545D9B988E42B887F96350FC8DB6F6DAD13CDFF298D628FA00E6",
+  "executed_script_sha256": "D65D0966510DB8AE45C8B69C1C065BA1C71ADFB4AE8E08599EEF9F825BB049DD",
+  "driver_sha256": "B48A61EC5ECF22694A068F8325C09D13C40C21E9A711C40B0B7888CA17744E72",
+  "method": "Current-source standard synthesis and physical gate optimization. Native fresh placement/route/hold. Temporary stricter targets only; clear all user SDC and reload exact original before final reports and bitgen. No stage-marker creation.",
+  "placement_guide_sha256": "D5646EB86AF587C7CA26F6A028358DF7BCFA3D29AA6448CA2382C45087AA345F",
+  "auxiliary_placement_guide_path": "D:/_fpga_package_tools/temperature_large_20261031/parent_overlay_init.adc",
+  "auxiliary_placement_guide_sha256": "13B98779F9A049C106DA8C5B8B01C515B6CB0968CFA3A7F5E288A804AE04EB4D",
+  "soft_placement_hints": 1695,
+  "hint_parent_bit_sha256": "BBA8A04DC95673A43E85545E89828935D91808BD39B29515E96EC14A950E137E",
+  "hint_parent_db_sha256": "EB9055EFB764345946FD78FE120428BC69C5D52BC449223E5FE3133AC2B1953C",
+  "hint_description": "the parent particle-transition overlay layout, as soft starting locations only; temperature text sizing is rebuilt from current source",
+  "selected": true,
+  "final_original_constraint_timing": "SWNS: 0.546ns, STNS: 0.000ns.\nHWNS: 0.027ns, HTNS: 0.000ns.\n"
+}

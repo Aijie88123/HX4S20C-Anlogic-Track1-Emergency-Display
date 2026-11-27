@@ -1,0 +1,12 @@
+# Never apply line-ending conversion to binary or captured data.
+*.bit binary
+*.bin binary
+*.BMP binary
+*.bmp binary
+*.gif binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npy binary
+*.wav binary
+*.hex -text

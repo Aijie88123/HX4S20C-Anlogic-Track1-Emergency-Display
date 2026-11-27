@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "control_interface": "existing V12 actual_state and live barrier_mode",
+  "scenes": {
+    "A": {
+      "name": "A",
+      "event_code": 0,
+      "event_name": "火灾",
+      "exit_policy": "automatic_shortest_reachable",
+      "allowed_exit_nodes": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "barrier_policy": "live_existing_control",
+      "actual_state": 1
+    },
+    "B": {
+      "name": "B",
+      "event_code": 1,
+      "event_name": "地震",
+      "exit_policy": "automatic_shortest_reachable",
+      "allowed_exit_nodes": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "barrier_policy": "live_existing_control",
+      "actual_state": 3
+    },
+    "C": {
+      "name": "C",
+      "event_code": 2,
+      "event_name": "实验室事故",
+      "exit_policy": "automatic_shortest_reachable",
+      "allowed_exit_nodes": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "barrier_policy": "live_existing_control",
+      "actual_state": 5
+    }
+  },
+  "legacy_event": {
+    "event_code": 3,
+    "event_name": "演练",
+    "named_alias": null
+  }
+}

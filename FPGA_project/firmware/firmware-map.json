@@ -1,0 +1,35 @@
+{
+  "version": "temperature_large_20261031",
+  "native": {
+    "A_display": {
+      "slices": 9584,
+      "lut": 16962,
+      "reg": 11614,
+      "bram": 61,
+      "bram32k": 14,
+      "dsp": 20,
+      "pll": 4,
+      "timing": "SWNS: 0.546ns, STNS: 0.000ns.\nHWNS: 0.027ns, HTNS: 0.000ns.\n",
+      "bit_sha256": "19BEF18266595BDB7B5D97F84F85D96D1EF899A5E63DC8B152E227232789D88D",
+      "bin_sha256": "3255233BF49042EDF3DEA5E5859E7E33DD080A458D0C0C2CE477E2B946A52F1D",
+      "rebuilt": true,
+      "method": "Current-source TD2026.1SP2 standard synthesis and physical gate optimization verified. Selected same source-bound gate with fresh native seed35 placement/routing/hold repair; temporary stricter search targets cleared and exact candidate SDC reloaded before final positive setup/hold, four DRC and bitgen. Original standard-flow physical result is unselected; no fabricated markers or claim that the original physical flow completed successfully. Original unchanged project RAM initial-placement ADC explicitly loaded before placement. Additional 1695 soft initial cell locations from the parent particle-transition overlay layout, as soft starting locations only; temperature text sizing is rebuilt from current source were used only as placement hints. Current-source placement/routing/timing/DRC/bitgen were all rerun; no prior timing or firmware reused."
+    },
+    "B_control": {
+      "slices": 9652,
+      "lut": 16848,
+      "reg": 11092,
+      "bram": 49,
+      "bram32k": 15,
+      "dsp": 9,
+      "pll": 2,
+      "timing": "SWNS: 0.152ns, STNS: 0.000ns.\nHWNS: 0.083ns, HTNS: 0.000ns.\n",
+      "bit_sha256": "7491DAA2033F5C77C62DFFEDF0592C0F4CB8764B99C9268D4826A250B0231AB8",
+      "bin_sha256": "DFA9B35F0F5E57E4719B900530ECF207B20B8747148D00275577461CD245A4F3",
+      "rebuilt": false,
+      "method": "Current-source TD2026.1SP2 standard synthesis and physical gate optimization verified. Selected same source-bound gate with fresh native seed36 placement/routing/hold repair; temporary stricter search targets cleared and exact candidate SDC reloaded before final positive setup/hold, four DRC and bitgen. Original standard-flow physical result is unselected; no fabricated markers or claim that the original physical flow completed successfully."
+    }
+  },
+  "upgrade": "Existing paired particle_transition/temperature_osd firmware: PROGRAM_FLASH A only. Older or unknown: package A+B together.",
+  "programming_performed": false
+}

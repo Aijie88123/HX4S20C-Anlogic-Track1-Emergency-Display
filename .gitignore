@@ -1,0 +1,33 @@
+# TD / build outputs
+output/
+FPGA_project/output/
+**/smart_terminal_Runs/
+**/db/
+**/incremental_db/
+**/greybox_tmp/
+*.qws
+*.qdb
+*.rpt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local runtime state
+connection.json
+last-repair.json
+*.local.json
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Scratch
+*.tmp
+*.bak
+~$*
